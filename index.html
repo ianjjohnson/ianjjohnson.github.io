@@ -5,6 +5,17 @@
 	<head>
 		<title>Ian Johnson</title>
 		<link rel="stylesheet" href="style.css" type="text/css">
+	
+
+	<script>
+	$(document).ready(function(){
+		$('.smooth').click(function(){
+		    $('html, body').animate({
+		        scrollTop: $( $.attr(this, 'href') ).offset().top
+		    }, 500);
+		    return false;
+		});
+	});
 	</script>
 
 	</head>
@@ -44,8 +55,8 @@
 				<a href="projects.html" style="margin-left: 2%; margin-right: 2%; color: white">
 					Projects			
 				</a>
-				<a href="blog.html" style="margin-left: 2%; margin-right: 2%; color: white">
-					Blog
+				<a class='smooth' href="#contact" style="margin-left: 2%; margin-right: 2%; color: white">
+					Contact
 				</a>
 				<a href="resume.pdf" style="margin-left: 2%; margin-right: 2%; 	color: white" target="_blank">
 					Resume
