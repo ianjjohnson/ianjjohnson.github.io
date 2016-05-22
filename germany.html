@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+
+<html>
+
+	<head>
+		<title>Ian Johnson</title>
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<!--<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+
+	<script>
+	$(document).ready(function(){
+		$('.smooth').click(function(){
+		    $('html, body').animate({
+		        scrollTop: $( $.attr(this, 'href') ).offset().top
+		    }, 500);
+		    return false;
+		});
+	});
+	</script>
+
+	<script>
+
+	$(window).scroll(function(e){ 
+	  var $el = $('#nav'); 
+	  var isPositionFixed = ($el.css('position') == 'fixed');
+	  if ($(this).scrollTop() > 320 && !isPositionFixed){ 
+	    $('#nav').css({'position': 'fixed',
+						'top': '40px',
+						'height': '1.5em',
+						'margin-bottom': '0%',
+						'background-color': 'rgba(0,0,0,.75)'
+					}); 
+	  }
+	  if ($(this).scrollTop() < 320 && isPositionFixed)
+	  {
+	    $('#nav').css({'position': 'relative',
+	    				'top' : '0px',
+						'margin-top': '-1.5em',
+						'height': '1.5em',
+						'margin-bottom': '0%',
+						'background-color': 'rgba(0,0,0,0.25)'
+					}); 
+	  } 
+	});
+
+	</script>
+
+	</head>
+
+	<body style="text-align: center; width: 100%;margin: 0 auto; margin-top: 0 auto">
+		
+
+	
+
+
+		<div id="projects" style="width: 100%; overflow: hidden; margin-top: 0">
+
+			<h4 style="font-size: 30pt; margin-top: 1em; margin-bottom: 0%"> Germany Journal </h4>
+
+			<p style="margin-left: 15%; margin-right: 15%; margin-top: 2%"> Some day-to-day thoughts on my trip to Weimar, Germany with SMU Abroad.</p>
+
+			<div id="main">
+
+				<div id="column" style="width: 75%">
+
+					<hr id="light"/>
+
+					<div id = "project">
+						<h4> Day 0 (Saturday, May 21)</h4>
+						<p> Today we arrived in Weimar, Germany after a trip from Denver through DFW and Frankfurt. I flew from Dallas with Jacob, Ben, and Fontenot and we took the train from Frankfurt to Weimar. When we arrived, we were greeted by Christina, one of our 'tutors' (paid friends) here in Weimar. We had to walk from the train station to our apartments, since their was a Nazi demonstration happening in the town center, so taxis couldn't get by. It seemed reasonably tame, but there were lots of heavily armed police around. After we unpacked and settled in to our small, but reasonably nice apartment, we went to the grocery store and we stocked our fridge with lots of food (lots of bratwurst and various beers). We have a nice little kitchenette with some pots and pans so we can make some food while we're here. We then went out for dinner at a very delicious restaurant about 100 feet from our apartment called "Doner Kebab". We all had these massive and delicious Doner Kebabs (which are basically like overfilled meaty tacos) for 4 euros each. Afterward, we walked around town a little and then watched the second half of the Manchester United game before going to sleep.</p>
+						<img src="images/php.png" style="width: 10%; margin-bottom: 0.75%">
+						<img src="images/mysql.png" style="width: 10%; margin-bottom: 2.5%">
+						<a href="https://github.com/SMUCSEG2Consulting/DedmanPickup" target="_blank">
+							<img src="images/github.jpg" style="width: 10%; margin-bottom: 3.25%">
+						</a>
+					</div>
+
+					<hr id="light"/>
+
+
+				</div>
+
+			</div>
+		</div>
+
+
+	</body>
+
+
+</html>
