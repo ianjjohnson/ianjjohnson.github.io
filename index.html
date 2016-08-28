@@ -22,16 +22,16 @@
 
 	<script>
 
-	$(window).scroll(function(e){ 
-	  var $el = $('#nav'); 
+	$(window).scroll(function(e){
+	  var $el = $('#nav');
 	  var isPositionFixed = ($el.css('position') == 'fixed');
-	  if ($(this).scrollTop() > 320 && !isPositionFixed){ 
+	  if ($(this).scrollTop() > 320 && !isPositionFixed){
 	    $('#nav').css({'position': 'fixed',
 						'top': '40px',
 						'height': '1.5em',
 						'margin-bottom': '0%',
 						'background-color': 'rgba(0,0,0,.75)'
-					}); 
+					});
 	  }
 	  if ($(this).scrollTop() < 320 && isPositionFixed)
 	  {
@@ -41,8 +41,8 @@
 						'height': '1.5em',
 						'margin-bottom': '0%',
 						'background-color': 'rgba(0,0,0,0.25)'
-					}); 
-	  } 
+					});
+	  }
 	});
 
 	</script>
@@ -50,7 +50,7 @@
 	</head>
 
 	<body style="text-align: center; width: 100%;margin: 0 auto; margin-top: 0 auto">
-		
+
 
 		<div id="head">
 
@@ -72,7 +72,7 @@
 					-->
 
 				</div>
-			
+
 		</div>
 
 		<div id="nav">
@@ -94,7 +94,7 @@
 					Resume
 				</a>
 			</p>
-						
+
 		</div>
 
 		<div id="aboutSection" style="width: 100%; overflow: hidden; margin-top: 2%; margin-bottom: 2%">
@@ -107,7 +107,7 @@
 						<h2> About Me </h2>
 					</div>
 
-					<p style="font-size: 1.2em">I am a computer science student and President's Scholar at Southern Methodist University with a passion for using computer science to solve real-world, non-CS related problems. I've been putting that passion to work since I was twelve, working on everything from data mining algorithms to RESTful database APIs to commercial scheduling software to mobile games. I'm currently pursuing both a Bachelors of Science and a Masters of Science in Computer Science, and plan to graduate with both degrees in 2019, after four total years at SMU. 
+					<p style="font-size: 1.2em">I am a computer science student and President's Scholar at Southern Methodist University with a passion for using computer science to solve real-world, non-CS related problems. I've been putting that passion to work since I was twelve, working on everything from data mining algorithms to RESTful database APIs to commercial scheduling software to mobile games. I'm currently pursuing both a Bachelors of Science and a Masters of Science in Computer Science, and plan to graduate with both degrees in 2019, after four total years at SMU.
 					</p>
 
 					<a href="http://www.lyle.smu.edu">
@@ -194,7 +194,7 @@
 						<img src="images/python.png" style="width: 10%; margin-bottom: 2%">
 						<img src="images/linux.png" style="width: 7.5%">
 						<a href="http://devpost.com/software/ssh-over-sms"><img src="images/devpost.jpg" style="width: 7.5%; margin-bottom: 0.75%"> </a>
-						
+
 					</div>
 
 
@@ -243,8 +243,10 @@
 
 					<div id = "project">
 						<h4>Classification by Association Algorithm in R</h4>
-						<p> I implemented the CBA (Classification Based on Association rules) algorithm from Liu, et al. 1998 in R, with performance-critical data structures and algorithms implemented in C. I packaged the algorithm with a standard R interface, and the package is available on my GitHub page for download. The package is currently in the submission process to CRAN, the de-facto governing body of R packages.</p>
-						<img src="images/r.png" style="width: 6%; margin-bottom: 2.5%">
+						<p> I implemented the CBA (Classification Based on Association rules) algorithm from Liu, et al. 1998 in R, with performance-critical data structures and algorithms implemented in C. I packaged the algorithm with a standard R interface, and the package is available on my GitHub page for download. The package is available through CRAN (Comprehensive R Archive Network), the de-facto governing body of R packages.</p>
+						<a href="https://cran.r-project.org/web/packages/arulesCBA/index.html" target="_blank">
+							<img src="images/r.png" style="width: 6%; margin-bottom: 2.5%">
+						</a>
 						<a href="https://github.com/ianjjohnson/arulesCBA" target="_blank">
 							<img src="images/github.jpg" style="width: 10%; margin-bottom: 3.25%">
 						</a>
@@ -361,7 +363,7 @@
 				<img src="images/twitter2.png" style="width: 4%; margin-bottom: 1%; margin-left: 1%">
 			</a>
 
-						
+
 		</div>
 
 
